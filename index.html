@@ -17,6 +17,232 @@
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* General styles */
+        body {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Container padding */
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Header styles */
+        .header__top {
+            padding: 10px 0;
+        }
+
+        .header__bottom {
+            padding: 15px 0;
+        }
+
+        /* Responsive navigation */
+        @media (max-width: 991px) {
+            .mainactive ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            .mainactive ul.show {
+                display: block;
+            }
+
+            .mainactive ul li {
+                display: block;
+                padding: 10px 15px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .bar {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        /* Banner section */
+        .banner {
+            padding: 50px 0;
+        }
+
+        .banner__content {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .banner__content {
+                text-align: left;
+            }
+        }
+
+        /* Feature section */
+        .feature__item {
+            margin-bottom: 30px;
+        }
+
+        /* Project section */
+        .project__item {
+            margin-bottom: 30px;
+        }
+
+        .thum img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .thum img {
+                height: 300px;
+            }
+        }
+
+        /* Feedback section */
+        .feedback__item {
+            margin-bottom: 30px;
+        }
+
+        /* Footer styles */
+        .footer {
+            padding-top: 50px;
+        }
+
+        .footer__about,
+        .footer__link,
+        .footer__news,
+        .footer__photo {
+            margin-bottom: 30px;
+        }
+
+        .footer__photo .item img {
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .footer__photo .item img {
+                height: 150px;
+            }
+        }
+
+        /* Utility classes */
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+
+        .pb-30 {
+            padding-bottom: 30px;
+        }
+
+        /* Existing styles */
+        .item img {
+            height: 150px;
+            border-radius: 15px;
+        }
+
+        .text h6 {
+            font-size: 18px;
+        }
+
+        .text p {
+            font-size: 14px;
+        }
+
+        .row.g-4 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .col-xl-3 {
+            flex: 0 0 auto;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .col-xl-3 {
+                width: calc(50% - 10px);
+                margin: 5px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-xl-3 {
+                width: calc(25% - 10px);
+            }
+        }
+
+        .clicktext {
+            padding: 10px 0;
+        }
+
+        @media (min-width: 768px) {
+            .natureplant__content ul li {
+                width: 50%;
+            }
+        }
+
+        /* Mobile menu styles */
+        @media (max-width: 991px) {
+            .mobile-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+
+            .mobile-menu.show {
+                display: block;
+            }
+
+            .mobile-menu li {
+                border-bottom: 1px solid #eee;
+            }
+
+            .mobile-menu li a {
+                display: block;
+                padding: 10px 15px;
+                color: #333;
+                text-decoration: none;
+            }
+
+            .mobile-menu .has-submenu > a::after {
+                content: '\f107';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                margin-left: 5px;
+            }
+
+            .mobile-menu .submenu {
+                display: none;
+                background-color: #f9f9f9;
+            }
+
+            .mobile-menu .submenu.show {
+                display: block;
+            }
+
+            .mobile-menu .submenu li a {
+                padding-left: 25px;
+            }
+
+            .bar {
+                cursor: pointer;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +262,7 @@
                                         <i class="fa-solid fa-square-phone"></i>
                                     </div>
                                     <div class="text">
-                                        <p><a href="tel:+917947891801" style="color: #555555;text-decoration: none;">+91-7947891801</a></p>                                    </div>
+                                        <p><a href="tel:+17947891801" style="color: #555555;text-decoration: none;">+1 7947891801</a></p>                                    </div>
                                 </li>
                                 <li>
                                     <div class="icon">
@@ -83,11 +309,11 @@
                                         <a href="index.html"><img src="headerimage.png"  style="height: 90px;width: 90px;" alt="logo"></a>
                                     </div>
                                     <div class="mainactive activescroll">
-                                        <ul>
+                                        <ul class="mobile-menu">
                                             <li><a href="index.html">Home</a></li>
-                                            <li>
+                                            <li class="has-submenu">
                                                 <a href="service.html">Service</a>
-                                                <ul>
+                                                <ul class="submenu">
                                                     <li><a href="Ser-Garden-maintenance.html">Garden maintenance</a></li>
                                                     <li><a href="Ser-Incl-Hedge-trimming.html">Incl Hedge trimming</a></li>
                                                     <li><a href="Ser-planting.html">Garden Planting</a></li>
@@ -799,26 +1025,22 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="project__btn">
-                <a href="portfolio.html" class="custom-btn">View All Project</a>
-            </div>
-        </div>
+            
     </section>
     <!-- procect section end here -->
 
     <!-- start feedback section here -->
     <section class="feedback padding-block overflow-hidden">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row justify-content-center">
                 <div class="col-xl-6 text-center pt-sm-0 pt-1">
-                    <div class="plybtn d-xl-block d-none">
+                    <!-- <div class="plybtn d-xl-block d-none">
                         <a href="https://www.youtube.com/" class="popup">
                             <i class="fa-solid fa-play"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6" >
                     <div class="section__header feedback__header">
                         <span>Our Feedback<img src="assets/img/logo/pata.png" alt="bakul"></span>
                         <h3>what Our Client Say About Us</h3>
@@ -1127,56 +1349,6 @@
         <p><i class="fa-regular fa-copyright"></i> Copyright 2024. All Rights Reserved by XPC Gardening Services</p>
     </div>
 </section>
-<style>
-    .item img {
-        height: 150px;
-        border-radius: 15px;
-    }
-
-    .thum img {
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .text h6 {
-        font-size: 18px;
-    }
-
-    .text p {
-        font-size: 14px;
-    }
-
-    .row g-4{
-        border: solid green 1px;
-    }
-
-    .col-xl-3 {
-        flex: 0 0 auto;
-        width: 24%;
-        border: solid green 0.5px;
-        padding: 20p;
-        padding: 20px;
-        border-radius: 10px;
-        margin: 5px;
-    }
-
-    .clicktext {
-        padding: -20px 0 -20px 0 ;
-    }
-
-
-    @media (min-width: 768px) {
-    .natureplant__content ul li {
-        width: 50%;
-    }
-}
-
-
-/* .mainactive ul li {
-: 20;
-} */
-
-</style>
 <!-- end footer section here -->
 
     <!-- scrollToTop start here -->
@@ -1199,7 +1371,26 @@
     <!-- custome js here -->
     <script src="assets/js/custom.js"></script>
 
-   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.bar');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const hasSubmenu = document.querySelectorAll('.has-submenu');
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show');
+            });
+
+            hasSubmenu.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 991) {
+                        e.preventDefault();
+                        this.querySelector('.submenu').classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 

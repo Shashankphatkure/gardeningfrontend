@@ -14,6 +14,173 @@
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">    
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* General responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            h2, h3 {
+                font-size: 24px;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+        }
+
+        /* Remove green borders */
+        .row.g-4 {
+            border: none;
+        }
+
+        .col-xl-3 {
+            border: none;
+            width: 100%;
+            margin: 0 0 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .col-xl-3 {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-xl-3 {
+                width: calc(25% - 15px);
+            }
+        }
+
+        /* Responsive footer photo gallery */
+        .footer__photo .allphoto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer__photo .item {
+            width: calc(50% - 5px);
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .footer__photo .item {
+                width: calc(33.33% - 10px);
+            }
+        }
+
+        .footer__photo .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Additional responsive adjustments */
+        .krishna {
+            padding: 15px;
+            border: none;
+        }
+
+        .imagereziers {
+            height: auto;
+            max-height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .pageheader {
+                padding: 3rem 0;
+            }
+        }
+
+        /* Responsive navigation */
+        @media (max-width: 991px) {
+            .mainactive ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            .mainactive ul.show {
+                display: block;
+            }
+
+            .mainactive ul li {
+                display: block;
+                padding: 10px 15px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .bar {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        /* Mobile menu styles */
+        @media (max-width: 991px) {
+            .mobile-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+
+            .mobile-menu.show {
+                display: block;
+            }
+
+            .mobile-menu li {
+                border-bottom: 1px solid #eee;
+            }
+
+            .mobile-menu li a {
+                display: block;
+                padding: 10px 15px;
+                color: #333;
+                text-decoration: none;
+            }
+
+            .mobile-menu .has-submenu > a::after {
+                content: '\f107';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                margin-left: 5px;
+            }
+
+            .mobile-menu .submenu {
+                display: none;
+                background-color: #f9f9f9;
+            }
+
+            .mobile-menu .submenu.show {
+                display: block;
+            }
+
+            .mobile-menu .submenu li a {
+                padding-left: 25px;
+            }
+
+            .bar {
+                cursor: pointer;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +200,7 @@
                                         <i class="fa-solid fa-square-phone"></i>
                                     </div>
                                     <div class="text">
-                                        <p><a href="tel:+917947891801" style="color: #555555;">+91-7947891801</a></p>
+                                        <p><a href="tel:+17947891801" style="color: #555555;">+1 7947891801</a></p>
                                     </div>
                                 </li>
                                 <li>
@@ -78,29 +245,27 @@
                             <div class="right">
                                 <div class="header__nav target">
                                     <div class="mobilelogo d-xl-none d-block">
-                                        <a href="index.html"><img src="assets/img/logo/whiteloog.png" alt="logo"></a>
+                                        <a href="index.html"><img src="headerimage.png" alt="logo" style="height: 90px; width: 90px;"></a>
                                     </div>
                                     <div class="mainactive activescroll">
-                                        <div class="mainactive activescroll">
-                                            <ul>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li>
-                                                    <a href="service.html">Service</a>
-                                                    <ul>
-                                                        <li><a href="Ser-Garden-maintenance.html">Garden maintenance</a></li>
-                                                        <li><a href="Ser-Incl-Hedge-trimming.html">Incl Hedge trimming</a></li>
-                                                        <li><a href="Ser-planting.html">Garden Planting</a></li>
-                                                        <li><a href="Ser-Small-tree-work.html">Small Tree Work</a></li>
-                                                        <li><a href="Ser-Trellis-installation.html">Trellis installation</a></li>
-                                                        <li><a href="Ser-Patio-installation.html">Patio installation</a></li>
-                                                        <li><a href="Ser-Landscaping.html">Gardening Landscaping</a></li>
-                                                        <li><a href="Ser-Jet-washing-and-Sealant-installation.html">Jet washing and Sealant installation</a></li>
-                                                        <li><a href="Ser-Fence-decking-and-furniture-restoration.html">Fence, Decking and Furniture installation</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </div>
+                                        <ul class="mobile-menu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li class="has-submenu">
+                                                <a href="service.html">Service</a>
+                                                <ul class="submenu">
+                                                    <li><a href="Ser-Garden-maintenance.html">Garden maintenance</a></li>
+                                                    <li><a href="Ser-Incl-Hedge-trimming.html">Incl Hedge trimming</a></li>
+                                                    <li><a href="Ser-planting.html">Garden Planting</a></li>
+                                                    <li><a href="Ser-Small-tree-work.html">Small Tree Work</a></li>
+                                                    <li><a href="Ser-Trellis-installation.html">Trellis installation</a></li>
+                                                    <li><a href="Ser-Patio-installation.html">Patio installation</a></li>
+                                                    <li><a href="Ser-Landscaping.html">Gardening Landscaping</a></li>
+                                                    <li><a href="Ser-Jet-washing-and-Sealant-installation.html">Jet washing and Sealant installation</a></li>
+                                                    <li><a href="Ser-Fence-decking-and-furniture-restoration.html">Fence, Decking and Furniture installation</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                                 
@@ -162,7 +327,7 @@
 
 
                         <div class="text" style="padding-top: 10px;">
-                            <div class="krishna" style="background-color: #ffffff;border:0.5px green solid ;padding: 25px;margin-top: 20px; border-radius: 20px;">
+                            <div class="krishna" style="background-color: #ffffff;padding: 25px;margin-top: 20px; border-radius: 20px;">
                                 <img src="iamges\set washing.jpg" style="
                                 width: 100%;height: 600px;object-fit: cover;"  alt="krishna">
                                 
@@ -187,8 +352,8 @@
                                             <div class="step">
                                                 <h6>Jet Washing:</h6>
                                                 <ul>
-                                                    <li><strong>Connect the Pressure Washer:</strong> Attach your pressure washer to a water source and ensure it’s set up correctly.</li>
-                                                    <li><strong>Choose the Right Nozzle:</strong> Use a nozzle that’s appropriate for the surface. For example, a 25-degree nozzle for general cleaning.</li>
+                                                    <li><strong>Connect the Pressure Washer:</strong> Attach your pressure washer to a water source and ensure it's set up correctly.</li>
+                                                    <li><strong>Choose the Right Nozzle:</strong> Use a nozzle that's appropriate for the surface. For example, a 25-degree nozzle for general cleaning.</li>
                                                     <li><strong>Start Cleaning:</strong> Begin jet washing, keeping the nozzle at a consistent distance from the surface (usually around 12-18 inches) to avoid damage.</li>
                                                     <li><strong>Rinse Thoroughly:</strong> Make sure to rinse the entire area thoroughly to remove any remaining dirt or cleaning agents.</li>
                                                 </ul>
@@ -212,7 +377,7 @@
                                                 <ul>
                                                     <li><strong>Preparation:</strong> Ensure the surface is completely dry and free of any debris.</li>
                                                     <li><strong>Apply the Sealant:</strong> Use a roller or brush for even application. For larger areas, a sprayer may be more efficient.</li>
-                                                    <li><strong>Multiple Coats:</strong> Depending on the product, you might need to apply multiple coats. Follow the manufacturer’s instructions for drying times between coats.</li>
+                                                    <li><strong>Multiple Coats:</strong> Depending on the product, you might need to apply multiple coats. Follow the manufacturer's instructions for drying times between coats.</li>
                                                     <li><strong>Regular Cleaning:</strong> Keep the sealed surface clean by regularly sweeping and washing it.</li>
                                                 </ul>
                                             </div>
@@ -537,35 +702,93 @@ h3 {
     }
 
     .row g-4{
-        border: solid green 1px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .col-xl-3 {
         flex: 0 0 auto;
-        width: 24%;
-        border: solid green 0.5px;
-        padding: 20p;
+        width: 100%;
         padding: 20px;
         border-radius: 10px;
-        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 768px) {
+        .col-xl-3 {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .col-xl-3 {
+            width: calc(25% - 15px);
+        }
     }
 
     .clicktext {
-        padding: -20px 0 -20px 0 ;
+        padding: 10px 0;
     }
-
 
     @media (min-width: 768px) {
-    .natureplant__content ul li {
-        width: 50%;
+        .natureplant__content ul li {
+            width: 50%;
+        }
     }
-}
 
+    /* Mobile menu styles */
+    @media (max-width: 991px) {
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
 
-/* .mainactive ul li {
-: 20;
-} */
+        .mobile-menu.show {
+            display: block;
+        }
 
+        .mobile-menu li {
+            border-bottom: 1px solid #eee;
+        }
+
+        .mobile-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .mobile-menu .has-submenu > a::after {
+            content: '\f107';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-left: 5px;
+        }
+
+        .mobile-menu .submenu {
+            display: none;
+            background-color: #f9f9f9;
+        }
+
+        .mobile-menu .submenu.show {
+            display: block;
+        }
+
+        .mobile-menu .submenu li a {
+            padding-left: 25px;
+        }
+
+        .bar {
+            cursor: pointer;
+        }
+    }
 </style>
 <!-- end footer section here -->
 
@@ -612,6 +835,26 @@ h3 {
     
      <!-- custome js here -->
      <script src="assets/js/custom.js"></script>    
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.bar');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const hasSubmenu = document.querySelectorAll('.has-submenu');
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show');
+            });
+
+            hasSubmenu.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 991) {
+                        e.preventDefault();
+                        this.querySelector('.submenu').classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
