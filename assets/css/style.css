@@ -12,6 +12,8 @@
   }
 }
 
+
+
 .banner .position_bshape.topleftimg {
   animation-name: shape;
   animation-duration: 4s;
@@ -2191,7 +2193,7 @@ input, textarea, select {
 }
 @media (max-width: 1199px) {
   .header__nav .mobilelogo {
-    background: #73B611;
+    background: #d7d7d7;
     padding: 0.9375rem 1.25rem;
     border-bottom: 2px solid #73B611;
   }
@@ -2205,7 +2207,7 @@ input, textarea, select {
     z-index: 99999;
     background: #fff;
     -webkit-transition: 1s;
-    padding-bottom:100vh ;
+    padding-bottom:0vh ;
     -moz-transition: 1s;
     transition: 1s;
     box-shadow: 1px 1px 11px 3px rgba(215, 215, 215, 0.4);
