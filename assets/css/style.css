@@ -2207,7 +2207,7 @@ input, textarea, select {
     z-index: 99999;
     background: #fff;
     -webkit-transition: 1s;
-    padding-bottom: 20px;
+    padding-bottom:0vh ;
     -moz-transition: 1s;
     transition: 1s;
     box-shadow: 1px 1px 11px 3px rgba(215, 215, 215, 0.4);
@@ -2298,7 +2298,7 @@ input, textarea, select {
 }
 @media (max-width: 1199px) {
   .header__nav .mainactive > ul li > ul {
-    display: block;
+    display: none;
   }
 }
 .header__nav .mainactive > ul li > ul li {
