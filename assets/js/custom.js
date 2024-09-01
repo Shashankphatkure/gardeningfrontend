@@ -54,16 +54,16 @@ $('.header__nav li a').on('click', function (e) {
 
 	
 //Header   	
-var fixed_top = $(".header__bottom");
-$(window).on('scroll', function () {
-	if (screen.width > 1200) {
-		if ($(this).scrollTop() > 100) {
-			fixed_top.addClass("header-fixed animated fadeInDown");
-		} else {
-			fixed_top.removeClass("header-fixed animated fadeInDown");
-		}
-	}	
-});
+// var fixed_top = $(".header__bottom");
+// $(window).on('scroll', function () {
+// 	if (screen.width > 1200) {
+// 		if ($(this).scrollTop() > 100) {
+// 			fixed_top.addClass("header-fixed animated fadeInDown");
+// 		} else {
+// 			fixed_top.removeClass("header-fixed animated fadeInDown");
+// 		}
+// 	}	
+// });
 
 var fixed_header = $(".header--headerpage2");
 	$(window).on('scroll', function () {
