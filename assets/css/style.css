@@ -2485,7 +2485,7 @@ input, textarea, select {
 }
 
 .banner__content {
-  padding: calc(2.0625rem + 9.75vw) 0;
+  padding: calc(.0625rem + 9.75vw) 0;
 }
 @media (min-width: 1200px) {
   .banner__content {
@@ -2499,6 +2499,14 @@ input, textarea, select {
   .banner__content {
   }
 }
+
+
+.row.g-4 {
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: space-around;
+}
+
 .banner__content h3 {
   line-height: 1.1 !important;
   margin-bottom: 0.9375rem;
@@ -2883,6 +2891,9 @@ input, textarea, select {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  margin-bottom: 10px;
+  height: 160px;
+  object-fit: cover;
   width: 210px;
 }
 
